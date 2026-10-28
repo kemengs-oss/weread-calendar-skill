@@ -9,7 +9,7 @@ html body .card .month{font-size:clamp(20px,3.5vh,38px)!important;line-height:1.
 html body .card .weekday{font-size:clamp(14px,2vh,21px);line-height:1.4;margin:clamp(8px,1.6vh,18px) 0 0}
 html body .card>.rule{flex:none;margin:clamp(14px,2.8vh,32px) auto;height:1px}
 html body .card>.quote{display:flex;flex-direction:column;flex:1 1 0;min-height:0;margin:0;padding:8px 5px 12px;overflow:auto;overscroll-behavior:contain;border:0;box-shadow:none;border-radius:0;background:transparent;scrollbar-width:thin}
-html body .card .quote-text{flex:none;display:block;width:100%;margin:auto 0;text-align:justify;overflow-wrap:anywhere;font-size:var(--quote-font,23px)!important;line-height:1.8!important;letter-spacing:1px;white-space:pre-line}
+html body .card .quote-text{flex:none;display:block;width:100%;margin:auto 0;text-align:justify;text-indent:2em;overflow-wrap:anywhere;font-size:var(--quote-font,23px)!important;line-height:1.8!important;letter-spacing:1px;white-space:pre-line}
 html[data-theme=pop] body .card .quote-text{width:calc(100% - 8px);padding:clamp(12px,2vh,24px);background:#fff8e9;border:2px solid #4c3b97;border-radius:4px;box-shadow:6px 6px 0 #4c3b97}
 html body .card>.source{flex:none;margin-top:clamp(14px,2.4vh,28px);padding-top:clamp(12px,2vh,24px);max-height:30vh;overflow:auto;scrollbar-width:thin}
 html body .card .book{font-size:clamp(17px,2.6vh,25px);line-height:1.5;letter-spacing:.5px}
