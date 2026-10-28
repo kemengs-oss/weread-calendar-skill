@@ -17,3 +17,9 @@ settings.json
 __pycache__/
 node_modules/
 .DS_Store
+
+# Explicitly approved public demo only (100 excerpts)
+!/docs/highlights.json
+!/docs/calendar-2026.json
+!/docs/settings.json
+!/docs/previews/*.png

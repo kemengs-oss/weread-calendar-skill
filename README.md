@@ -9,7 +9,19 @@
 - 下载当前卡片为高清 PNG，不包含按钮栏。
 - 增量更新只替换部分未来日期，保留今天和过去的安排。
 
-仓库只含代码和虚构演示生成器，不包含开发者的真实书摘、账号、邮箱、密钥或现有站点身份。
+仓库包含 Skill 代码、虚构演示生成器，以及用户明确授权公开展示的 100 条精选书摘（81 本书）。其余 900 条书摘、账号、邮箱、密钥与原私有站点身份未提交。
+
+## 在线体验与示例图片
+
+**[打开 GitHub Pages 体验](https://kemengs-oss.github.io/weread-calendar-demo/)** · [公开体验仓库](https://github.com/kemengs-oss/weread-calendar-demo)
+
+公开版只包含获授权的 100 条精选书摘，全年轮换重读；技能导入默认仍支持 1000 条。
+
+| 鼠尾草绿 | 黑白简约 | 暖杏柔粉 | 缤纷撞色 | 深蓝夜读 |
+| --- | --- | --- | --- | --- |
+| ![鼠尾草绿](docs/previews/sage.png) | ![黑白简约](docs/previews/mono.png) | ![暖杏柔粉](docs/previews/apricot.png) | ![缤纷撞色](docs/previews/pop.png) | ![深蓝夜读](docs/previews/night.png) |
+
+示例图均为宽 900 × 高 1200（高:宽＝4:3），展示同一天的五种主题。点击图片可查看原图。
 
 ## 作为 Skill 使用
 
@@ -57,7 +69,7 @@ node skills/weread-calendar/scripts/calendar.mjs update --input ./private/new-hi
 
 默认每次最多更新 7 个未来日期，且不超过剩余天数的 20%。重复导入会去重；待排的新书摘留在队列。用户明确需要全量重排时才使用 `rebuild`。
 
-网站包含个人原文，默认使用私有托管。`site/` 和 `private/` 已被 Git 忽略；不要把个人书摘上传到这个技能仓库。HTML 页面需通过 HTTP(S) 打开，部署在域名根路径。
+网站包含个人原文，默认使用私有托管。`site/` 和 `private/` 已被 Git 忽略；除已明确授权的 100 条公开体验数据外，不要提交个人书摘。HTML 页面需通过 HTTP(S) 打开，支持域名根路径及 GitHub Pages 项目子路径。
 
 ## 验证
 
