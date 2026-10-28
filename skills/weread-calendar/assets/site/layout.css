@@ -1,0 +1,24 @@
+/* A stable screen-sized page: only the reading area can scroll on very small screens. */
+html,html body{height:100%;overflow:hidden}
+html body{padding:0;background:var(--paper)}
+html body .card{--card-height:100vh;--card-height:100svh;display:flex;flex-direction:column;height:var(--card-height);min-height:0;max-height:var(--card-height);padding:clamp(18px,4vh,48px) clamp(24px,6vw,62px) calc(94px + env(safe-area-inset-bottom,0px));overflow:hidden}
+html body .card>.label{flex:none;margin:0 0 clamp(10px,2vh,24px);font-size:11px;line-height:1.5}
+html body .card>header{flex:none}
+html body .card .day{font-size:clamp(70px,15vh,170px);line-height:1;letter-spacing:-5px}
+html body .card .month{font-size:clamp(20px,3.5vh,38px)!important;line-height:1.25;margin:clamp(8px,1.7vh,20px) 0 0;letter-spacing:0!important}
+html body .card .weekday{font-size:clamp(14px,2vh,21px);line-height:1.4;margin:clamp(8px,1.6vh,18px) 0 0}
+html body .card>.rule{flex:none;margin:clamp(14px,2.8vh,32px) auto;height:1px}
+html body .card>.quote{display:flex;flex-direction:column;flex:1 1 0;min-height:0;margin:0;padding:8px 5px 12px;overflow:auto;overscroll-behavior:contain;border:0;box-shadow:none;border-radius:0;background:transparent;scrollbar-width:thin}
+html body .card .quote-text{flex:none;display:block;width:100%;margin:auto 0;text-align:justify;overflow-wrap:anywhere;font-size:var(--quote-font,23px)!important;line-height:1.8!important;letter-spacing:1px;white-space:pre-line}
+html[data-theme=pop] body .card .quote-text{width:calc(100% - 8px);padding:clamp(12px,2vh,24px);background:#fff8e9;border:2px solid #4c3b97;border-radius:4px;box-shadow:6px 6px 0 #4c3b97}
+html body .card>.source{flex:none;margin-top:clamp(14px,2.4vh,28px);padding-top:clamp(12px,2vh,24px);max-height:30vh;overflow:auto;scrollbar-width:thin}
+html body .card .book{font-size:clamp(17px,2.6vh,25px);line-height:1.5;letter-spacing:.5px}
+html body .card .author{font-size:clamp(13px,1.9vh,20px);line-height:1.4;margin:6px 0 0}
+html body .card .author:empty{display:none}
+html body .card .details{font-size:clamp(11px,1.5vh,14px);line-height:1.6;margin-top:clamp(8px,1.5vh,18px)}
+html body .calendar-nav{bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+html body .public-note{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+html body .export-card{position:fixed;left:-10000px;top:0;height:auto;max-height:none;min-height:100svh;pointer-events:none}
+html body .export-card>.quote{flex:none;overflow:visible;min-height:240px}
+html body .export-card>.source{max-height:none;overflow:visible}
+@media(max-height:650px){html body .card{padding-top:14px;padding-bottom:78px}html body .card>.label{font-size:10px;margin-bottom:8px}html body .card .day{font-size:68px}html body .card .month{font-size:20px!important;margin-top:6px}html body .card .weekday{font-size:13px;margin-top:6px}html body .card>.rule{margin:12px auto}html body .card>.source{margin-top:10px;padding-top:8px}html body .card .details{margin-top:6px}html body .calendar-nav{bottom:10px}}
