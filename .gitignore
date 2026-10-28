@@ -1,0 +1,19 @@
+# User data and generated sites
+/site/
+/generated/
+/private/
+work/
+.env
+.env.*
+!.env.example
+*highlights*.json
+calendar-*.json
+settings.json
+*.png
+*.jpg
+*.jpeg
+*.tgz
+*.tar.gz
+__pycache__/
+node_modules/
+.DS_Store

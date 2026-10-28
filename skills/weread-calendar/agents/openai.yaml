@@ -1,0 +1,4 @@
+interface:
+  display_name: "微信读书万年历"
+  short_description: "用自己的微信读书书摘生成全年专属日历，支持五种主题、跨书轮换和图片下载。"
+  default_prompt: "使用 $weread-calendar，用我的微信读书书摘生成专属万年历。"
