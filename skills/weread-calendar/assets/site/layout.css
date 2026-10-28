@@ -17,7 +17,7 @@ html body .card .author{font-size:clamp(13px,1.9vh,20px);line-height:1.4;margin:
 html body .card .author:empty{display:none}
 html body .card .details{font-size:clamp(11px,1.5vh,14px);line-height:1.6;margin-top:clamp(8px,1.5vh,18px)}
 html body .calendar-nav{bottom:calc(16px + env(safe-area-inset-bottom,0px))}
-html body .public-note{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+html body .public-note{top:0;left:0;position:absolute!important;width:1px!important;height:1px!important;padding:0!important;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 html body .export-card{position:fixed;left:-10000px;top:0;height:auto;max-height:none;min-height:100svh;pointer-events:none}
 html body .export-card>.quote{flex:none;overflow:visible;min-height:240px}
 html body .export-card>.source{max-height:none;overflow:visible}
