@@ -31,3 +31,6 @@ html body .calendar-nav .theme-switch{background:transparent}html body .calendar
 
 /* Keep source metadata compact without changing its underlying text. */
 html body .card .book{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;text-overflow:ellipsis;overflow-wrap:break-word}html body .card .author{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}html body .card .author:empty{display:none}
+
+/* Constrain author metadata even when child content or cached base styles differ. */
+html body .card .author{box-sizing:border-box;width:100%;min-width:0;max-width:100%;max-height:1.4em;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important}html body .card .author *{white-space:nowrap}
