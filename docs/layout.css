@@ -28,3 +28,6 @@ html body .calendar-nav{position:fixed;z-index:5;left:50%;bottom:18px;bottom:cal
 html body .calendar-nav .theme-switch{background:transparent}html body .calendar-nav button:hover{background:rgba(100,110,120,.05)}
 
 @supports ((backdrop-filter:blur(12px)) or (-webkit-backdrop-filter:blur(12px))){html body .calendar-nav{background:rgba(248,249,245,.38)}html[data-theme="night"] body .calendar-nav{background:rgba(24,36,48,.5)}}
+
+/* Keep source metadata compact without changing its underlying text. */
+html body .card .book{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;text-overflow:ellipsis;overflow-wrap:break-word}html body .card .author{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}html body .card .author:empty{display:none}
